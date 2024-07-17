@@ -15,19 +15,54 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+* { font-family: "pretendard", sans-serif; }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+  .inner {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 1440px;
+  }
 }
+
+
+/* 웹폰트 CSS */
+@font-face { font-family:"pretendard"; src:url("../assets/fonts/Pretendard-Black.ttf"); }
+@font-face { font-family:"pretendard"; src:url("../assets/fonts/Pretendard-Black.woff"); }
+
+@font-face { font-family:"pretendard"; src:url("../assets/fonts/Pretendard-Bold.ttf"); font-weight: 700; }
+@font-face { font-family:"pretendard"; src:url("../assets/fonts/Pretendard-Bold.woff"); font-weight: 700; }
+
+@font-face { font-family:"pretendard"; src:url("../assets/fonts/Pretendard-ExtraBold.ttf") }
+@font-face { font-family:"pretendard"; src:url("../assets/fonts/Pretendard-ExtraBold.woff") }
+
+@font-face { font-family:"pretendard"; src:url("../assets/fonts/Pretendard-ExtraLight.ttf") }
+@font-face { font-family:"pretendard"; src:url("../assets/fonts/Pretendard-ExtraLight.woff") }
+
+@font-face { font-family:"pretendard"; src:url("../assets/fonts/Pretendard-Light.ttf") }
+@font-face { font-family:"pretendard"; src:url("../assets/fonts/Pretendard-Light.woff") }
+
+@font-face { font-family:"pretendard"; src:url("../assets/fonts/Pretendard-Medium.ttf"); font-weight: 500; }
+@font-face { font-family:"pretendard"; src:url("../assets/fonts/Pretendard-Medium.woff"); font-weight: 500; }
+
+@font-face { font-family:"Pretendard"; src:url("../assets/fonts/Pretendard-Regular.ttf"); font-weight: 400; }
+@font-face { font-family:"Pretendard"; src:url("../assets/fonts/Pretendard-Regular.woff"); font-weight: 400; }
+
+@font-face { font-family:"pretendard"; src:url("../assets/fonts/Pretendard-SemiBold.ttf"); font-weight: 600; }
+@font-face { font-family:"pretendard"; src:url("../assets/fonts/Pretendard-SemiBold.woff"); font-weight: 600; }
+
+@font-face { font-family:"pretendard"; src:url("../assets/fonts/Pretendard-Thin.ttf") }
+@font-face { font-family:"pretendard"; src:url("../assets/fonts/Pretendard-Thin.woff") }
+/* 웹폰트 CSS end */
