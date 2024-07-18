@@ -24,6 +24,10 @@ body {
   width: 100%;
 }
 
+ul, ol, li, dl {
+  list-style: none;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -34,6 +38,35 @@ body {
     margin: 0 auto;
     position: relative;
     width: 1440px;
+  }
+
+  @keyframes toastTop {
+    0% {
+      display: none;
+      opacity: 0;
+      transform: translate3d(0,-100%,0);
+    }
+    100% {
+      display: block;
+      opacity: 1;
+      margin-top: 20px;
+      transform: translate3d(0,0,0);
+    }
+  }
+
+  .toast-provider { 
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
+  .toast {
+    animation: toastTop .5s ease-in-out .2s 1 forwards;
+    transform: translate3d(0,-100%,0);
+    min-width: 320px;
+    position: relative;
+    width: fit-content;
   }
 }
 
